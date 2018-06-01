@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Example</title>
+        <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="spicyApp1">
+        <div ng-controller="SpicyController">
+            <button ng-click="chiliSpicy()">Chili</button>
+            <button ng-click="jalapenoSpicy()">Jalapeño</button>
+            <p>The food is {{spice}} spicy!</p>
+        </div>
+        <div ng-controller="Controller2">
+            <div ng-repeat="var in vars">
+                <input type="text" ng-model="var">
+                {{var}}
+            </div>
+        </div>
+    </body>
+</html>
